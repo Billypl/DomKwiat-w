@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@400;500;700&family=Lato:wght@400;700;900&family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+nav {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(90deg, rgba(3, 55, 15, 0.706) 0%, rgba(9, 121, 15, 0.712) 46%, rgba(0,212,255,0) 100%), 
+    url("../assets/green-roses.jpg");
+    background-size: contain;
+    min-height: 300px;
+    padding: 1rem;
+}
+
+/* white transparent triangle */
+nav::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 130px;
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.766) 0%, rgba(255, 255, 255, 0.76) 100%);
+}
+
+.logoSection {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+
+    font-size: 3rem;
+    max-height: 70px;
+    color: white;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.logoSection > a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+
+}
+
+.logoSection > a > img {
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.logoSection > a > header {
+    display: flex;
+    align-items: end;
+    line-height: 2.5rem;
+}
+
+nav > ul {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+
+nav > ul > li {
+    height: 50%;
+    border-radius: 1.5rem;
+    align-items: center;
+    display: flex;
+    background-color: rgba(0, 128, 0, 0.724);
+    transition: 0.4s ease;
+    text-align: center;
+}
+
+nav > ul > li:hover {
+    background-color: rgba(237, 237, 237, 0.516);
+}
+
+nav > ul > li:hover > a {
+    color: black;
+    font-weight: 700;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    transform: scale(0.93);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 1150px) {
+
+    .logoSection  > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+    .logoSection > a > header {
+        line-height: normal;
+    }
+    nav > ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        padding: 1.5rem;  
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+    nav > ul::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 30vh;
+        background-color: white;
+    }
+    nav::before {
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 9px;
+    }
+
+    .line {
+        width: 35px;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger.open + ul {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .haburger.line {
+        transform-origin: 50% 50%;
+    }
+
+    .hamburger.open .line:nth-child(1) {
+        transform:  translateY(12px) rotate(45deg);
+    }
+    .hamburger.open .line:nth-child(2) {
+        opacity: 0;
+        transform: scale(0);
+    }
+    .hamburger.open .line:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+}
