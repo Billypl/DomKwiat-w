@@ -1,0 +1,12 @@
+.icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    text-align: center;
+}
+
+.icon-card > i {
+    font-size: 5rem;
+}

@@ -1,13 +1,16 @@
 import Navigation from "./components/NavBar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import "./styles/style.css";
 
 // tip: rafce
 
 function detectPageLink() {
   switch (window.location.pathname) {
     case "/":
-      return "Strona główna";
+      return <Home />;
     case "/o-nas":
-      return "O nas";
+      return <About />;
     case "/oferta":
       return "Oferta";
     case "/produkty":
@@ -25,7 +28,7 @@ function App() {
   return (
     <>
       <Navigation />
-      {detectPageLink()}
+      <div className="mainWrapper">{detectPageLink()}</div>
     </>
   );
 }
