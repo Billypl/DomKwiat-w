@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/Footer.css";
 // import {ReactComponent as FooterSVG} from "../assets/green-roses.jpg";
 // import FooterSVG from "../assets/footer-wave2.svg";
@@ -6,7 +5,7 @@ import FooterSVG from "../assets/wave-haikei (2).svg";
 const Footer = () => {
   return (
     <>
-      <div className="wave">
+      <div className="wave footer-wave-containter">
         <img className="footer-wave" src={FooterSVG}></img>
       </div>
       <footer>

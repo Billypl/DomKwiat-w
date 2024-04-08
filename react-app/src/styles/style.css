@@ -28,12 +28,12 @@ main {
     align-items: center;
 }
 
+section {
+    margin: 3rem 0;
+}
 
 article {
     margin: 1.5rem 0;
-}
-
-section {
 }
 
 @media (min-width: 1150px) {

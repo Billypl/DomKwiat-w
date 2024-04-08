@@ -80,7 +80,7 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-    background-color: rgba(237, 237, 237, 0.516);
+    background-color: rgba(237, 237, 237, 0.835);
 }
 
 nav > ul > li:hover > a {

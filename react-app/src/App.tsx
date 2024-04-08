@@ -21,7 +21,7 @@ function detectPageLink() {
     case "/kontakt":
       return "Kontakt";
     default:
-      return "Strona główna";
+      return <Home />;
   }
 }
 

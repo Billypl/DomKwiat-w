@@ -10,9 +10,12 @@ footer {
     gap: 2rem;
 }
 
+.footer-wave-containter {
+    margin-top: 8rem;
+}
+
 .footer-wave {
     position: absolute;
-    /* bottom: calc(100% - 4vw); */
     bottom: 0;
     left: 0;
     display: block;
