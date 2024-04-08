@@ -74,7 +74,7 @@ nav > ul > li {
     border-radius: 1.5rem;
     align-items: center;
     display: flex;
-    background-color: rgba(0, 128, 0, 0.724);
+    background-color: var(--green-nav-button);
     transition: 0.4s ease;
     text-align: center;
 }
@@ -104,7 +104,7 @@ nav > ul > li > a {
 .hamburger {
     display: none;
 }
-
+/* for smaller sizes (exception! rest of the css is written mobile first) */
 @media (max-width: 1150px) {
 
     .logoSection  > a {

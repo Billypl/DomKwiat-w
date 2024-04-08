@@ -2,6 +2,7 @@ import Navigation from "./components/NavBar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import "./styles/style.css";
+import Footer from "./components/Footer";
 
 // tip: rafce
 
@@ -29,6 +30,7 @@ function App() {
     <>
       <Navigation />
       <div className="mainWrapper">{detectPageLink()}</div>
+      <Footer />
     </>
   );
 }
