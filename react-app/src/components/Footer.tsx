@@ -1,7 +1,6 @@
 import "../styles/Footer.css";
-// import {ReactComponent as FooterSVG} from "../assets/green-roses.jpg";
-// import FooterSVG from "../assets/footer-wave2.svg";
-import FooterSVG from "../assets/wave-haikei (2).svg";
+import FooterSVG from "../assets/footer-wave.svg";
+
 const Footer = () => {
   return (
     <>

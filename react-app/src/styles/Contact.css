@@ -1,0 +1,64 @@
+#contact-us i {
+    /* background-color: red; */
+    /* width: 20px; */
+    display: inline-block;
+    width: 2rem;
+}
+address {
+    margin: 0;
+}
+
+#contact-us {
+    margin: 2rem 0 ;
+}
+
+#contact-us a {
+    color: var(--green-footer);
+}
+
+#contact-us #phone-numbers a, #contact-us address a {
+    text-decoration: none;
+}
+
+#contact-us > article >  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4, h3 {
+    text-align: center;
+}
+
+
+#iframe-section {
+    margin: 0;
+}
+
+* {
+    /* border: red 1px solid; */
+}
+
+#contact-us p {
+    margin-bottom: 0.5rem;    
+}
+
+@media (min-width: 1150px) {
+    #contact-us {
+        display: flex;
+        align-items: center;
+        height: 290px;
+        margin: 5rem 0;
+    }
+    #contact-us article {
+        margin: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: space-between;
+        height: 100%;
+    }
+    #open-hours {
+        text-align: justify;
+    }
+}

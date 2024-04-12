@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import "./styles/style.css";
 import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 
 // tip: rafce
 
@@ -19,7 +20,7 @@ function detectPageLink() {
     case "/kwiatomaty":
       return "Kwiatomaty";
     case "/kontakt":
-      return "Kontakt";
+      return <Contact />;
     default:
       return <Home />;
   }
@@ -29,7 +30,9 @@ function App() {
   return (
     <>
       <Navigation />
-      <div className="mainWrapper">{detectPageLink()}</div>
+      <div className="mainWrapper">
+        <main>{detectPageLink()}</main>
+      </div>
       <Footer />
     </>
   );
