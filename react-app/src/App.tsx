@@ -4,10 +4,11 @@ import About from "./pages/About";
 import "./styles/style.css";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
+import FlowerMachines from "./pages/Flower-machines";
 
 // tip: rafce
 
-function detectPageLink() {
+function routeMainPage() {
   switch (window.location.pathname) {
     case "/":
       return <Home />;
@@ -18,7 +19,7 @@ function detectPageLink() {
     case "/produkty":
       return "Produkty";
     case "/kwiatomaty":
-      return "Kwiatomaty";
+      return <FlowerMachines />;
     case "/kontakt":
       return <Contact />;
     default:
@@ -31,28 +32,11 @@ function App() {
     <>
       <Navigation />
       <div className="mainWrapper">
-        <main>{detectPageLink()}</main>
+        <main>{routeMainPage()}</main>
       </div>
       <Footer />
     </>
   );
 }
-
-// function App() {
-//   let items = ["1", "2", "3", "4", "5"];
-//   const onSelectedItem = (item: string) => {
-//     console.log(item);
-//   };
-
-//   return (
-//     <div>
-//       <ListGroup
-//         items={items}
-//         heading="Numbers"
-//         onSelectedItem={onSelectedItem}
-//       />
-//     </div>
-//   );
-// }
 
 export default App;

@@ -11,14 +11,13 @@
 
 
 @media (min-width: 1150px) {
+    #about {
+        margin-bottom: 7rem;
+    }
     #why-us > article {
         display: flex;
     }
     #about > div {
         display: flex;
     }
-    #why-us  {
-        margin-bottom: 7rem;
-    }
-
 }

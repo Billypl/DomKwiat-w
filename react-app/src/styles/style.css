@@ -17,6 +17,7 @@ body {
 
 main {
     margin: 4rem 3rem;
+    margin-bottom: 10rem;
     max-width: 900px;
     display: flex;
     flex-direction: column;
@@ -30,7 +31,7 @@ main {
 }
 
 section {
-    margin: 3rem 0;
+    margin: 1.5rem 0;
 }
 
 article {
@@ -40,9 +41,6 @@ article {
 @media (min-width: 1150px) {
     body {
         overflow-x: hidden;
-    }
-    section {
-        margin: 4rem auto;
     }
 }
 
@@ -58,4 +56,8 @@ article {
 .wave {
     position: relative;
     width: 100%;
+}
+
+p {
+    margin-bottom: 0;
 }
