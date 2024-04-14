@@ -39,25 +39,25 @@ const FlowerMachines = () => {
         <h3>Lokalizacje</h3>
         <article>
           <PopCard
-            imgSrc={"../assets/kwiatomaty/kwiatomat-przy-lidlu.jpg"}
+            imgSrc={"/assets/kwiatomaty/kwiatomat-przy-lidlu.jpg"}
             title="ul. Bajki 2"
             subtitle="Rotmanka"
             description="przy piekarni Cymes"
           />
           <PopCard
-            imgSrc={"../assets/kwiatomaty/kwiatomat-bank.jpg"}
+            imgSrc={"/assets/kwiatomaty/kwiatomat-bank.jpg"}
             title="ul. Wojska Polskiego 38"
             subtitle="Pruszcz Gdański"
             description="przy banku PKO"
           />
           <PopCard
-            imgSrc={"../assets/kwiatomaty/kwiatomat-noca.jpg"}
+            imgSrc={"/assets/kwiatomaty/kwiatomat-noca.jpg"}
             title="ul. Chopina 36"
             subtitle="Pruszcz Gdański"
             description="przy centrum handlowym Arbat"
           />
           <PopCard
-            imgSrc={"../assets/kwiatomaty/lotnisko.jpg"}
+            imgSrc={"/assets/kwiatomaty/lotnisko.jpg"}
             title="ul. J. Słowackiego 200"
             subtitle="Gdańsk"
             description="lotnisko, terminal"

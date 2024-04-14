@@ -5,34 +5,25 @@ import "./styles/style.css";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import FlowerMachines from "./pages/Flower-machines";
+import { Routes, Route } from "react-router-dom";
 
 // tip: rafce
-
-function routeMainPage() {
-  switch (window.location.pathname) {
-    case "/":
-      return <Home />;
-    case "/o-nas":
-      return <About />;
-    case "/oferta":
-      return "Oferta";
-    case "/produkty":
-      return "Produkty";
-    case "/kwiatomaty":
-      return <FlowerMachines />;
-    case "/kontakt":
-      return <Contact />;
-    default:
-      return <Home />;
-  }
-}
 
 function App() {
   return (
     <>
       <Navigation />
       <div className="mainWrapper">
-        <main>{routeMainPage()}</main>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/o-nas" element={<About />} />
+            <Route path="/oferta" element={"Oferta"} />
+            <Route path="/produkty" element={"Produkty"} />
+            <Route path="/kwiatomaty" element={<FlowerMachines />} />
+            <Route path="/kontakt" element={<Contact />} />
+          </Routes>
+        </main>
       </div>
       <Footer />
     </>

@@ -10,10 +10,6 @@ footer {
     gap: 2rem;
 }
 
-.footer-wave-containter {
-    margin-top: 8rem;
-}
-
 .footer-wave {
     position: absolute;
     bottom: 0;
@@ -49,5 +45,8 @@ footer ul {
     .mainFooter {
         display: grid;
         grid: auto-flow / repeat(3, 1fr);
+    }
+    .footer-wave-containter {
+        margin-top: 8rem;
     }
 }

@@ -16,8 +16,8 @@ body {
 }
 
 main {
-    margin: 4rem 3rem;
-    margin-bottom: 10rem;
+    margin: 0rem 3rem;
+    margin-top: 4rem;
     max-width: 900px;
     display: flex;
     flex-direction: column;
@@ -41,6 +41,9 @@ article {
 @media (min-width: 1150px) {
     body {
         overflow-x: hidden;
+    }
+    main {
+        margin-bottom: 10rem;
     }
 }
 

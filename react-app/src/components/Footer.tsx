@@ -1,5 +1,5 @@
 import "../styles/Footer.css";
-import FooterSVG from "../assets/footer-wave.svg";
+import FooterSVG from "@assets/footer-wave.svg";
 
 const Footer = () => {
   return (

@@ -1,6 +1,7 @@
 import "../styles/NavBar.css";
-import logo from "../assets/kwiaciarnia.png";
+import logo from "@assets/kwiaciarnia.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -11,10 +12,10 @@ const NavBar = () => {
   return (
     <nav>
       <div className="logoSection">
-        <a href="/">
+        <Link to="/">
           <img src={logo} />
           <header>Dom Kwiatów</header>
-        </a>
+        </Link>
       </div>
       <div
         className={(isNavOpen ? "open " : "") + "hamburger"}
@@ -26,22 +27,22 @@ const NavBar = () => {
       </div>
       <ul className="navOptions">
         <li>
-          <a href="/">Strona główna</a>
+          <Link to="/">Strona główna</Link>
         </li>
         <li>
-          <a href="/o-nas">O nas</a>
+          <Link to="/o-nas">O nas</Link>
         </li>
         <li>
-          <a href="/oferta">Oferta</a>
+          <Link to="/oferta">Oferta</Link>
         </li>
         <li>
-          <a href="/produkty">Produkty</a>
+          <Link to="/produkty">Produkty</Link>
         </li>
         <li>
-          <a href="/kwiatomaty">Kwiatomaty</a>
+          <Link to="/kwiatomaty">Kwiatomaty</Link>
         </li>
         <li>
-          <a href="kontakt">Kontakt</a>
+          <Link to="/kontakt">Kontakt</Link>
         </li>
       </ul>
     </nav>
