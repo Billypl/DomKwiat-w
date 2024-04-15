@@ -1,0 +1,17 @@
+#products * {
+    /* border: 1px solid red; */
+} 
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    /* margin: 0 auto; */
+}
+
+@media (min-width: 1150px) {
+    #products{
+        justify-content: space-between;
+    }
+
+}

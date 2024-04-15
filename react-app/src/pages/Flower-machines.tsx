@@ -1,20 +1,12 @@
 import PopCard from "../components/PopCard";
+import TitleUnderlined from "../components/TitleUnderlined";
 import "../styles/Flower-machines.css";
-
-const flowerMachineImages = Object.values(
-  import.meta.glob("@assets/kwiatomaty/*.{png,jpg,jpeg,PNG,JPEG}", {
-    eager: true,
-    as: "url",
-  })
-);
-
-console.log(flowerMachineImages);
 
 const FlowerMachines = () => {
   return (
     <>
       <section id="flower-machines-description">
-        <h1>Kwiatomaty</h1>
+        <TitleUnderlined priority="1">Kwiatomaty</TitleUnderlined>
         <article>
           <b>Czym są kwiatomaty?</b> Dla tych co jeszcze nie znają/nie wiedzą
           czym jest
@@ -36,7 +28,8 @@ const FlowerMachines = () => {
         </article>
       </section>
       <section id="flower-machines-gallery">
-        <h3>Lokalizacje</h3>
+        <TitleUnderlined priority="3">Lokalizacje</TitleUnderlined>
+
         <article>
           <PopCard
             imgSrc={"/assets/kwiatomaty/kwiatomat-przy-lidlu.jpg"}
@@ -65,17 +58,26 @@ const FlowerMachines = () => {
         </article>
       </section>
       <section id="flower-machines-instructions">
-        <h3>Instrukcja korzystania</h3>
+        <TitleUnderlined priority="3">Instrukcja korzystania</TitleUnderlined>
         <ol>
-          <li>Test</li>
-          <li>Test</li>
-          <li>Test</li>
-          <li>Test</li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus?
+          </li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus?
+          </li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus?
+          </li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus?
+          </li>
         </ol>
       </section>
       <section>
         <article>
-          <h3>Mapka</h3>
+          <TitleUnderlined priority="3">Mapka</TitleUnderlined>
+
           <ul>
             <li>Ul Wojska Polskiego 38 Pruszcz Gd przy banku PKO</li>
             <li>Ul Chopina 36 Pruszcz Gd przy centrum handlowym Arbat</li>
@@ -88,7 +90,7 @@ const FlowerMachines = () => {
         <article id="iframe-section">
           <iframe
             src="https://www.google.com/maps/d/embed?mid=1NhUDGadLev64pLvmT_vQaYaKXMEltoE&ehbc=2E312F&noprof=1"
-            width="600"
+            width="100%"
             height="450"
             loading="lazy"
           ></iframe>

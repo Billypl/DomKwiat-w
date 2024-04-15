@@ -1,4 +1,5 @@
 import "../styles/PopCard.css";
+import Img from "./Img";
 
 interface PopCardProps {
   imgSrc: string;
@@ -12,7 +13,7 @@ const PopCard = ({ imgSrc, title, subtitle, description }: PopCardProps) => {
     <>
       <div className="pop-card">
         <div className="pop-card-imgWrapper">
-          <img src={new URL(imgSrc, import.meta.url).href}></img>
+          <Img imgSrc={imgSrc} />
           <div className="pop-card-overlay">
             <h5>{title}</h5>
             <h6>{subtitle}</h6>

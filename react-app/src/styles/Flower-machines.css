@@ -4,3 +4,22 @@
     gap: 3rem;
     justify-content: center;
 }
+
+#flower-machines-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flower-machines-description article {
+    text-align: center;
+}
+
+#iframe-section {
+    display: flex;
+    justify-content: center;
+}
+
+.title-underlined {
+    justify-content: center;
+}

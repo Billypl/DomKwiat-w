@@ -16,7 +16,7 @@ const About = () => {
         <div>
           <img className="imgPlaceholder"></img>
           <article>
-            <TitleUnderlined priority="3"> Test </TitleUnderlined>
+            <TitleUnderlined priority="3"> Cytat </TitleUnderlined>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
             mollitia a minima ullam, possimus placeat consectetur consequatur
             labore eveniet eligendi quibusdam. Pariatur fuga debitis molestiae
@@ -25,7 +25,7 @@ const About = () => {
         </div>
       </section>
       <section id="why-us">
-        <h2>Dlaczego my?</h2>
+        <TitleUnderlined priority="2"> Dlaczego my? </TitleUnderlined>
         <article>
           <IconCard
             title="Najlepsza kwiaciarnia w Pruszczu"

@@ -18,7 +18,8 @@ body {
 main {
     margin: 0rem 3rem;
     margin-top: 4rem;
-    max-width: 900px;
+    margin-bottom: 8rem;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,4 +64,8 @@ article {
 
 p {
     margin-bottom: 0;
+}
+
+.title-underlined {
+    justify-content: center;
 }

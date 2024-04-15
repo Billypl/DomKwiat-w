@@ -8,7 +8,7 @@ interface TitleUnderlinedProps {
 const TitleUnderlined = ({ children, priority }: TitleUnderlinedProps) => {
   const Tag = `h${priority}` as keyof JSX.IntrinsicElements;
   return (
-    <header className="underlineHeader">
+    <header className="title-underlined">
       <Tag>{children}</Tag>
     </header>
   );

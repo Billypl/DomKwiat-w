@@ -26,22 +26,22 @@ const NavBar = () => {
         <div className="line"></div>
       </div>
       <ul className="navOptions">
-        <li>
+        <li onClick={() => toggleNav()}>
           <Link to="/">Strona główna</Link>
         </li>
-        <li>
+        <li onClick={() => toggleNav()}>
           <Link to="/o-nas">O nas</Link>
         </li>
-        <li>
+        <li onClick={() => toggleNav()}>
           <Link to="/oferta">Oferta</Link>
         </li>
-        <li>
+        <li onClick={() => toggleNav()}>
           <Link to="/produkty">Produkty</Link>
         </li>
-        <li>
+        <li onClick={() => toggleNav()}>
           <Link to="/kwiatomaty">Kwiatomaty</Link>
         </li>
-        <li>
+        <li onClick={() => toggleNav()}>
           <Link to="/kontakt">Kontakt</Link>
         </li>
       </ul>
